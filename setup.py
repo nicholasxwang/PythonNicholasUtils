@@ -1,10 +1,10 @@
 from distutils.core import setup
 setup(
-  name = 'NicholasUtils',         # How you named your package folder (MyLib)
-  packages = ['NicholasUtils'],   # Chose the same as "name"
+  name = 'PythonNicholasUtils',         # How you named your package folder (MyLib)
+  packages = ['PythonNicholasUtils'],   # Chose the same as "name"
   version = '1.0',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
-  description = 'NicholasUtils a library with all the import Utils in Python.',   # Give a short description about your library
+  description = 'PythonNicholasUtils a library with all the import Utils in Python.',   # Give a short description about your library
   author = 'Nicholas Wang',                   # Type in your name
   author_email = 'nicholas.x.wang@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/nicholasxwang/PythonNicholasUtils',   # Provide either the link to your github or to your website
@@ -27,4 +27,3 @@ setup(
     'Programming Language :: Python :: 3.9',
   ],
 )
-view raw
