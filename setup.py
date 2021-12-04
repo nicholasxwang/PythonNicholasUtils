@@ -11,7 +11,11 @@ setup(
   download_url = 'https://github.com/nicholasxwang/PythonNicholasUtils/archive/refs/tags/v_01.tar.gz',    # I explain this later on
   keywords = ['UTILS'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
-          
+          "werkzeug",
+          "selenium",
+          "requests",
+          "schoolopy,
+          "bs4"
       ],
   classifiers=[
     'Development Status :: 4 - Beta',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
