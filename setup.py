@@ -15,7 +15,9 @@ setup(
           "selenium",
           "requests",
           "schoolopy",
-          "bs4"
+          "bs4",
+          "random",
+          "time"
       ],
   classifiers=[
     'Development Status :: 4 - Beta',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
