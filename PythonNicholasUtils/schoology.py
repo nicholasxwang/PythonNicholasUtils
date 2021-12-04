@@ -2,10 +2,12 @@ import requests
 import selenium
 import bs4
 import schoolopy
+import random
+import time
 
-def schoology_api(key, secret, user_name)):
+def schoology_api(key, secret, user_name):
   #Get your key and secret from https://app.schoology.com/api or <DOMAIN>.schoology.com/api
-  sc = schoolopy.Schoology(schoolopy.Auth(os.environ['KEY'], os.environ['SECRET']))
+  sc = schoolopy.Schoology(schoolopy.Auth(key, secret))
   sc.limit = 10 
   consumer_key = key
   consumer_secret = secret
@@ -21,7 +23,7 @@ def schoology_api(key, secret, user_name)):
       'Host': 'api.schoology.com',
       'Content-Type': 'application/json',
       'Authorization': auth}
-  data =requests.get(f'https://api.schoology.com/v1/search?keywords={text}&type=user&limit=5', headers=headers) 
+  data =requests.get(f'https://api.schoology.com/v1/search?keywords={user_name}&type=user&limit=5', headers=headers) 
   data.raise_for_status()
   data = data.json()
 
