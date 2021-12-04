@@ -14,7 +14,7 @@ setup(
           "werkzeug",
           "selenium",
           "requests",
-          "schoolopy,
+          "schoolopy",
           "bs4"
       ],
   classifiers=[
